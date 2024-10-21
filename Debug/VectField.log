@@ -1,0 +1,35 @@
+﻿  OctTree.cpp
+C:\Users\aayan\VectField\OctTree.cpp(222,23): warning C4018: '<': signed/unsigned mismatch
+  Particle.cpp
+  vector.cpp
+  Vector3.cpp
+  Generating Code...
+vector.obj : error LNK2019: unresolved external symbol __imp__glewInit@0 referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol _glfwInit referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol _glfwTerminate referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol _glfwCreateWindow referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol _glfwWindowShouldClose referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol _glfwPollEvents referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol _glfwMakeContextCurrent referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol _glfwSwapBuffers referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewBindBuffer referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewBufferData referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewBufferSubData referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewDeleteBuffers referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewGenBuffers referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewAttachShader referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewCompileShader referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewCreateProgram referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewCreateShader referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewDeleteShader referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewEnableVertexAttribArray referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewLinkProgram referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewShaderSource referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewUseProgram referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewVertexAttribPointer referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewBindVertexArray referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewDeleteVertexArrays referenced in function _main
+vector.obj : error LNK2019: unresolved external symbol __imp____glewGenVertexArrays referenced in function _main
+C:\Users\aayan\VectField\\Dependencies\Vulkan\Lib\vulkan-1.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\aayan\VectField\\Dependencies\GLFW\lib-vc2019\glfw3.lib : warning LNK4272: library machine type 'x64' conflicts with target machine type 'x86'
+C:\Users\aayan\VectField\Debug\VectField.exe : fatal error LNK1120: 26 unresolved externals

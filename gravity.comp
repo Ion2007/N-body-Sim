@@ -1,0 +1,36 @@
+#version 430
+
+layout (local_size_x = 256) in; // Adjust based on the number of particles
+
+struct Particle {
+    vec3 pos;
+    vec3 velocity;
+    float mass;
+};
+
+layout(std430, binding = 0) buffer Particles {
+    Particle particles[];
+};
+
+uniform float dt;
+uniform float gravityConstant;
+
+void main() {
+    uint i = gl_GlobalInvocationID.x;
+    
+    vec3 acceleration = vec3(0.0);
+    
+    for (uint j = 0; j < particles.length(); j++) {
+        if (i != j) {
+            vec3 displacement = particles[j].pos - particles[i].pos;
+            float r = length(displacement);
+            if (r < 1e-5) r = 1e-5; // Avoid division by zero
+            
+            float forceMagnitude = gravityConstant * particles[i].mass * particles[j].mass / (r * r);
+            acceleration += (forceMagnitude / particles[i].mass) * normalize(displacement);
+        }
+    }
+
+    particles[i].velocity += acceleration * dt;
+    particles[i].pos += particles[i].velocity * dt;
+}
